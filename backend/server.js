@@ -37,7 +37,7 @@
 // app.listen(3000, () => console.log("Le serveur a démarré au port " + 3000));
 const express = require ('express')
 const bodyParser = require("body-parser");
-mongoose.set('strictQuery', true);
+
 
 const APP = express();
 const cors = require ('cors');
