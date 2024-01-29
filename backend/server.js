@@ -38,7 +38,7 @@
 const express = require ('express')
 const bodyParser = require("body-parser");
 
-const app = express();
+const APP = express();
 const cors = require ('cors');
 
 require('dotenv').config();
@@ -49,16 +49,16 @@ const authRoutes = require ("./routes/auth");
 // database connection
 connection();
 
-app.use(express.json());
-app.use(cors());
+APP.use(express.json());
+APP.use(cors());
 
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+APP.use(bodyParser.urlencoded({ extended: true }));
+APP.use(bodyParser.json());
 
 
 
-app.use("/api/users",userRoutes)
-app.use("/api/users", authRoutes);
+APP.use("/api/users",userRoutes)
+APP.use("/api/users", authRoutes);
 
 
 // // Définir un dossier pour servir des fichiers statiques (images)
@@ -69,4 +69,4 @@ app.use("/api/users", authRoutes);
 // app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 const port = process.env.PORT || 8080; // Utiliser le port défini dans les variables d'environnement ou le port 5000 par défaut
-app.listen(port, () => console.log(`backListening on port ${port}...`));
+APP.listen(port, () => console.log(`backListening on port ${port}...`));
