@@ -18,7 +18,7 @@ function Connexion() {
      console.log(data);
      try {
 // // Autres routes CRUD...
-       const url = "https://gestion-hotel-ce8s.onrender.com/api/auth";
+       const url = "https://gestion-hotel-ce8s.onrender.com/api/users";
        const { data: res } = await axios.post(url, data);
        localStorage.setItem("token", res.data);
        window.location = "/";

@@ -10,9 +10,9 @@ import {
 } from "react-router-dom";
 import Connexion from "./connect/connexion";
 import App from "./App";
-import Dashboard from "./Pages/Dashboard";
 import Hotels from "./Pages/Hotels";
 import Inscription from "./connect/inscription";
+import CardDashboard from "./Pages/CardDashboard";
 
 const route = createBrowserRouter([
   {
@@ -25,7 +25,7 @@ const route = createBrowserRouter([
     children: [
       {
         path: "/admin/Dashboard",
-        element: <Dashboard />,
+        element: <CardDashboard/>,
       },
       {
         path: "/admin/Hotels",
