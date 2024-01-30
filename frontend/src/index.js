@@ -25,7 +25,7 @@ const route = createBrowserRouter([
     children: [
       {
         path: "/admin/Dashboard",
-        element: <Dashboard />,
+        element: <CardDashboard />,
       },
       {
         path: "/admin/Hotels",
