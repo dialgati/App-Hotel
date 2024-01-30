@@ -25,7 +25,11 @@ const route = createBrowserRouter([
     children: [
       {
         path: "/admin/Dashboard",
+<<<<<<< HEAD
         element: <CardDashboard/>,
+=======
+        element: <CardDashboard />,
+>>>>>>> 4f9cac7ccb1f000176e7f161e7e6a18ca69c106f
       },
       {
         path: "/admin/Hotels",
