@@ -22,7 +22,7 @@ function Connexion() {
        const { data: res } = await axios.post(url, data);
        localStorage.setItem("token", res.data);
        window.location = "/";
-        navigate("/admin/Dashboard");
+        navigate("/Dashboard");
      } catch (error) {
        if (
          error.response &&
