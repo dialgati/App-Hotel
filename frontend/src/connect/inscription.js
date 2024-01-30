@@ -18,7 +18,7 @@ function Inscription() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-      const url = "https://world-chj5.onrender.com/api/users";
+      const url = "https://gestion-hotel-ce8s.onrender.com/api/users";
       const {data:res} = await axios.post(url, data);
       navigate("/connexion")
       console.log(res.message);
