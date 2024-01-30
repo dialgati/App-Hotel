@@ -98,9 +98,11 @@ function Connexion() {
                 </label>
               </div>
               {error && <div className="text-danger">{error}</div>}
-              <button type="submit" className="btn gris w-100">
+              <Link to='/admin/Dashboard'>
+                    <button type="submit" className="btn gris w-100">
                 Se connecter
               </button>
+               </Link>
             </form>
             <p className="text-center text-white mt-3">
               Vous n'avaez pas de compte?
